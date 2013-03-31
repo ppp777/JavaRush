@@ -1,0 +1,1 @@
+Exercises for http://javarush.ru/ corses. 
