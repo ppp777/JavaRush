@@ -6,14 +6,13 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
- *
- *JavaRush.ru
- *Level 08, Lesson 08, Task 04
+ * JavaRush.ru
+ * Level 08, Lesson 08, Task 04
  *
  * Создать словарь (Map<String, Date>), и занести в него десять записей по принципу: «фамилия» - «дата рождения».
  * Удалить из словаря всех людей родившихся летом.
  *
- * Date: 25.02.13
+ * Date: 06.04.13
  * @author Sergey Kandalintsev
  */
 public class Solution
