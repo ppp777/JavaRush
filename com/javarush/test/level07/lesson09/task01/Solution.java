@@ -69,11 +69,5 @@ public class Solution
         {
             System.out.println(x);
         }
-
-
-
-//        System.out.println(multipleOf3);
-//        System.out.println(even);
-//        System.out.println(others);
     }
 }
