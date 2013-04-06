@@ -13,31 +13,10 @@ package com.javarush.test.level07.lesson12.home06;
  * @author Sergey Kandalintsev
  *
  */
-
 public class Solution
 {
     public static final boolean MALE = true;
     public static final boolean FEMALE = false;
-
-    public static void main(String[] args)
-    {
-        Human[] family = new Human[9];
-
-        family[0] = new Human("Борим Моисеевич",        MALE,   69, null,       null);
-        family[1] = new Human("Иосиф Виссарионович",    MALE,   92, null,       null);
-        family[2] = new Human("Клара Захаровна",        FEMALE, 58, null,       null);
-        family[3] = new Human("Изольда Тихоновна",      FEMALE, 79, null,       null);
-        family[4] = new Human("Alexandr Ivanov",        MALE,   40, family[1],  family[3]);
-        family[5] = new Human("Veronika Ivanova",       FEMALE, 36, family[0],  family[2]);
-        family[6] = new Human("Настя",                  FEMALE, 5,  family[4],  family[5]);
-        family[7] = new Human("Вовочка",                FEMALE, 10, family[4],  family[5]);
-        family[8] = new Human("Татьяна",                FEMALE, 16, family[4],  family[5]);
-
-        for (Human x : family)
-        {
-            System.out.println(x);
-        }
-    }
 
     public static class Human
     {
@@ -70,6 +49,26 @@ public class Solution
                 text += ", мать: " + this.mother.name;
 
             return text;
+        }
+    }
+
+    public static void main(String[] args)
+    {
+        Human[] family = new Human[9];
+
+        family[0] = new Human("Борим Моисеевич",        MALE,   69, null,       null);
+        family[1] = new Human("Иосиф Виссарионович",    MALE,   92, null,       null);
+        family[2] = new Human("Клара Захаровна",        FEMALE, 58, null,       null);
+        family[3] = new Human("Изольда Тихоновна",      FEMALE, 79, null,       null);
+        family[4] = new Human("Alexandr Ivanov",        MALE,   40, family[1],  family[3]);
+        family[5] = new Human("Veronika Ivanova",       FEMALE, 36, family[0],  family[2]);
+        family[6] = new Human("Настя",                  FEMALE, 5,  family[4],  family[5]);
+        family[7] = new Human("Вовочка",                MALE,   10, family[4],  family[5]);
+        family[8] = new Human("Татьяна",                FEMALE, 16, family[4],  family[5]);
+
+        for (Human x : family)
+        {
+            System.out.println(x);
         }
     }
 }
