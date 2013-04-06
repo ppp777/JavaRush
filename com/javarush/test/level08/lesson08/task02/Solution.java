@@ -2,65 +2,44 @@ package com.javarush.test.level08.lesson08.task02;
 
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.Random;
-import java.util.Set;
 
 /**
- *
- *JavaRush.ru
- *Level 08, Lesson 08, Task 02
- *
+ * JavaRush.ru
+ * Level 08, Lesson 08, Task 02
+ * <p/>
  * Создать множество чисел(Set<Integer>), занести туда 20 различных чисел.
  * Удалить из множества все числа больше 10.
- *
- * Date: 13.02.13
+ * <p/>
+ * Date: 06.04.13
  * @author Sergey Kandalintsev
  */
 public class Solution
 {
-    public static void main(String[] args)
-    {
-        HashSet<Integer> set = createSet();
-
-//        for (Integer i : set)
-//            System.out.println(i);
-
-        System.out.println();
-        System.out.println();
-
-        removeAllNumbersMoreThen10(set);
-
-        for (Integer i : set)
-            System.out.println(i);
-    }
-
     public static HashSet<Integer> createSet()
     {
-        Set<Integer> integerSet = new HashSet<Integer>();
-        Random rd = new Random();
+        HashSet<Integer> set = new HashSet<Integer>();
 
-        for (int i = 0; i < 20; i++)
+        for ( int i = 0; i < 20; i++ )
         {
-            integerSet.add(rd.nextInt(40));
-            System.out.println(i);
+            set.add( i );
         }
 
-        return (HashSet<Integer>) integerSet;
+        return set;
     }
 
-    public static HashSet<Integer> removeAllNumbersMoreThen10(HashSet<Integer> set)
+    public static HashSet<Integer> removeAllNumbersMoreThen10( HashSet<Integer> set )
     {
+        Iterator<Integer> iterator = set.iterator();
 
-        for (Integer setElement : set)
+        while ( iterator.hasNext() )
         {
-            if (setElement > 10)
+            if ( iterator.next() > 10 )
             {
-                set.remove(setElement);
+                iterator.remove();
             }
         }
 
         return set;
-
     }
 }
 
