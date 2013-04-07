@@ -20,35 +20,40 @@ public class Solution
     public static String method1()
     {
         method2();
-        //Напишите тут ваш код
+        StackTraceElement[] traceElements = Thread.currentThread().getStackTrace();
 
+        return traceElements[2].getMethodName();
     }
 
     public static String method2()
     {
         method3();
-        //Напишите тут ваш код
+        StackTraceElement[] traceElements = Thread.currentThread().getStackTrace();
 
+        return traceElements[2].getMethodName();
     }
 
     public static String method3()
     {
         method4();
-        //Напишите тут ваш код
+        StackTraceElement[] traceElements = Thread.currentThread().getStackTrace();
 
+        return traceElements[2].getMethodName();
     }
 
     public static String method4()
     {
         method5();
-        //Напишите тут ваш код
+        StackTraceElement[] traceElements = Thread.currentThread().getStackTrace();
 
+        return traceElements[2].getMethodName();
     }
 
     public static String method5()
     {
-        //Напишите тут ваш код
+        StackTraceElement[] traceElements = Thread.currentThread().getStackTrace();
 
+        return traceElements[2].getMethodName();
     }
 }
 
