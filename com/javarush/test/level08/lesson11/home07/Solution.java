@@ -11,7 +11,7 @@ package com.javarush.test.level08.lesson11.home07;
  */
 public class Solution
 {
-    public int A = 5;
+    public static int A = 5;
     public static int B = 2;
 
     public int C = A * B;
@@ -21,7 +21,7 @@ public class Solution
     {
     }
 
-    public static int getValue()
+    public int getValue()
     {
         return D;
     }
