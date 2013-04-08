@@ -19,15 +19,18 @@ public class Solution
     {
         Set<Cat> cats = createCats();
 
-        //Написать тут ваш код
-
+        cats.remove( cats.iterator().next() );
         printCats( cats );
     }
 
     public static Set<Cat> createCats()
     {
-        //Написать тут ваш код
-        return null;
+        Set<Cat> kotegi = new HashSet<Cat>();
+
+        kotegi.add( new Cat() );
+        kotegi.add( new Cat() );
+        kotegi.add( new Cat() );
+        return kotegi;
     }
 
     public static void printCats( Set<Cat> cats )
