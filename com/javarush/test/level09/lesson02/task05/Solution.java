@@ -10,11 +10,11 @@ package com.javarush.test.level09.lesson02.task05;
  * Date: 08.04.13
  * @author Sergey Kandalintsev
  */
-public class Solution
-{
-    public static int getStackTraceDeep()
-    {
-        //Напишите тут ваш код
-
-    }
-}
+//public class Solution
+//{
+//    public static int getStackTraceDeep()
+//    {
+//        //Напишите тут ваш код
+//
+//    }
+//}
