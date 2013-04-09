@@ -33,26 +33,38 @@ public class Solution
     {
         HashSet<Cat> result = new HashSet<Cat>();
 
-        //Написать тут ваш код
+        result.add( new Cat() );
+        result.add( new Cat() );
+        result.add( new Cat() );
+        result.add( new Cat() );
 
         return result;
     }
 
     public static Set<Dog> createDogs()
     {
-        //Написать тут ваш код
-        return null;
+        HashSet<Dog> result = new HashSet<Dog>();
+
+        result.add( new Dog() );
+        result.add( new Dog() );
+        result.add( new Dog() );
+
+        return result;
     }
 
     public static Set<Object> join( Set<Cat> cats, Set<Dog> dogs )
     {
-        //Написать тут ваш код
-        return null;
+        Set<Object> result = new HashSet<Object>();
+
+        result.addAll( cats );
+        result.addAll( dogs );
+
+        return result;
     }
 
     public static void removeCats( Set<Object> pets, Set<Cat> cats )
     {
-        //Написать тут ваш код
+        pets.removeAll( cats );
     }
 
     public static void printPets( Set<Object> pets )
