@@ -2,7 +2,7 @@ package com.javarush.test.level10.lesson04.task01;
 
 /**
  * JavaRush.ru
- * Level 10, Lesson 04, Task 05
+ * Level 10, Lesson 04, Task 01
  * <p/>
  * Расставь где нужно оператор приведения типа:<br />
  * byte a = 1234;<br />
