@@ -18,13 +18,15 @@ public class Solution
 {
     public static void main( String[] args ) throws Exception
     {
-        //Напишите тут ваш код
-
-        HashMap<String, String> map = new HashMap<String, String>( null );
-        map.put( null, null );
-        map.remove( null );
-
-        //Напишите тут ваш код
-
+        try
+        {
+            HashMap<String, String> map = new HashMap<String, String>( null );
+            map.put( null, null );
+            map.remove( null );
+        }
+        catch ( NullPointerException e )
+        {
+            System.out.println( e );
+        }
     }
 }

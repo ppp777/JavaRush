@@ -14,11 +14,13 @@ public class Solution
 {
     public static void main( String[] args ) throws Exception
     {
-        //Напишите тут ваш код
-
-        int a = 42 / 0;
-
-        //Напишите тут ваш код
-
+        try
+        {
+            int a = 42 / 0;
+        }
+        catch ( ArithmeticException e )
+        {
+            System.out.println( e );
+        }
     }
 }

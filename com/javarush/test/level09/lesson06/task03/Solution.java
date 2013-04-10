@@ -15,12 +15,14 @@ public class Solution
 {
     public static void main( String[] args ) throws Exception
     {
-        //Напишите тут ваш код
-
-        int[] m = new int[2];
-        m[8] = 5;
-
-        //Напишите тут ваш код
-
+        try
+        {
+            int[] m = new int[2];
+            m[8] = 5;
+        }
+        catch ( ArrayIndexOutOfBoundsException e )
+        {
+            System.out.println( e );
+        }
     }
 }
