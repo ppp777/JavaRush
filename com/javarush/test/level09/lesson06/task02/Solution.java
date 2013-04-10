@@ -19,7 +19,8 @@ public class Solution
         {
             String s = null;
             String m = s.toLowerCase();
-        } catch ( NullPointerException e )
+        }
+        catch ( NullPointerException e )
         {
             System.out.println( e );
         }
