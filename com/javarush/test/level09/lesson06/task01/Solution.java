@@ -17,8 +17,7 @@ public class Solution
         try
         {
             int a = 42 / 0;
-        }
-        catch ( ArithmeticException e )
+        } catch ( ArithmeticException e )
         {
             System.out.println( e );
         }
