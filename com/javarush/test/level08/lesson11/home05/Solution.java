@@ -24,7 +24,18 @@ public class Solution
     {
         BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) );
         String s = reader.readLine();
+        String[] splittedWords = s.split( "\\s+" ); // '\s+' - regex for all whitespaces
 
-        //Напишите тут ваш код
+        s = "";
+        if ( splittedWords[0].length() > 0 )
+        {
+            for ( String word : splittedWords )
+            {
+                s += word.substring( 0, 1 ).toUpperCase() + word.substring( 1 ) + " ";
+            }
+        }
+
+        s = s.trim();
+        System.out.println( s );
     }
 }
