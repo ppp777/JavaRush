@@ -23,9 +23,20 @@ public class Solution
 
     public static Map<String, String> createPeopleList()
     {
-        //Напишите тут ваш код
+        Map<String, String> people = new HashMap<String, String>();
 
-        return null;
+        people.put( "Ivanov", "Ivan" );
+        people.put( "Ivanov", "Petr" );
+        people.put( "Sidorov", "Ivan" );
+        people.put( "Semenov", "Sergey" );
+        people.put( "Frolov", "Igor" );
+        people.put( "Sergeev", "Igor" );
+        people.put( "Kostenko", "Alexey" );
+        people.put( "Petrenko", "Sergey" );
+        people.put( "Dmitriev", "Sergey" );
+        people.put( "Nikonov", "Petr" );
+
+        return people;
     }
 
     public static void printPeopleList( Map<String, String> map )
