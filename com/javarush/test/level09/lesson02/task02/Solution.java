@@ -1,15 +1,15 @@
 package com.javarush.test.level09.lesson02.task02;
 
 /**
- * JavaRush.ru
- * Level 09, Lesson 09, Task 02
- * <p/>
- * Написать пять методов, которые вызывают друг друга. Каждый метод должен возвращать имя метода, вызвавшего его,
- * полученное с помощью StackTrace.
- * <p/>
- * Date: 07.04.13
- * @author Sergey Kandalintsev
- */
+* JavaRush.ru
+* Level 09, Lesson 09, Task 02
+* <p/>
+* Написать пять методов, которые вызывают друг друга. Каждый метод должен возвращать имя метода, вызвавшего его,
+* полученное с помощью StackTrace.
+* <p/>
+* Date: 07.04.13
+* @author Sergey Kandalintsev
+*/
 public class Solution
 {
     public static void main( String[] args ) throws Exception
