@@ -3,8 +3,8 @@ package com.javarush.test.level08.lesson11.bonus02;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * JavaRush.ru
@@ -35,26 +35,52 @@ public class Solution
     {
         BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) );
 
-        //list of addresses
-        List<String> addresses = new ArrayList<String>();
+        //map of pairs (city --> family)
+        Map<String, String> addresses = new HashMap<String, String>();
         while ( true )
         {
-            String family = reader.readLine();
-            if ( family.isEmpty() )
+            String city = reader.readLine();
+            if ( city.isEmpty() )
             {
                 break;
             }
-
-            addresses.add( family );
+            String family = reader.readLine();
+            addresses.put( city, family );
         }
 
-        //read home number
-        int houseNumber = Integer.parseInt( reader.readLine() );
-
-        if ( 0 <= houseNumber && houseNumber < addresses.size() )
-        {
-            String familySecondName = addresses.get( houseNumber );
-            System.out.println( familySecondName );
-        }
+        //read city
+        String city = reader.readLine();
+        System.out.println( addresses.get( city ) );
     }
 }
+
+// Исходный текст программы:
+//public class Solution
+//{
+//    public static void main( String[] args ) throws IOException
+//    {
+//        BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) );
+//
+//        //list of addresses
+//        List<String> addresses = new ArrayList<String>();
+//        while ( true )
+//        {
+//            String family = reader.readLine();
+//            if ( family.isEmpty() )
+//            {
+//                break;
+//            }
+//
+//            addresses.add( family );
+//        }
+//
+//        //read home number
+//        int houseNumber = Integer.parseInt( reader.readLine() );
+//
+//        if ( 0 <= houseNumber && houseNumber < addresses.size() )
+//        {
+//            String familySecondName = addresses.get( houseNumber );
+//            System.out.println( familySecondName );
+//        }
+//    }
+//}
