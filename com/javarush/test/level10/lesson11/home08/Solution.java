@@ -18,7 +18,6 @@ public class Solution
     public static ArrayList<String>[] createList()
     {
         //Напишите тут ваш код
-
         return null;
     }
 
