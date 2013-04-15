@@ -11,9 +11,17 @@ package com.javarush.test.level09.lesson11.home01;
  */
 public class Solution
 {
-    public static void main(String[] args)
+    public static void main( String[] args )
     {
-        int x =  5/0;
-        System.out.println(x);
+        try
+        {
+            int x = 5 / 0;
+            System.out.println( x );
+        }
+        catch ( ArithmeticException e )
+        {
+            System.out.println( e );
+
+        }
     }
 }
