@@ -16,6 +16,7 @@ public class Solution
 {
     public static void main( String[] args )
     {
-        //Напишите тут ваш код
+        Date today = new Date();
+        System.out.println(today);
     }
 }
