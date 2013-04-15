@@ -21,7 +21,6 @@ public class Solution
         catch ( ArithmeticException e )
         {
             System.out.println( e );
-
         }
     }
 }
