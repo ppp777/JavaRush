@@ -23,21 +23,21 @@ public class Solution
     public static void main( String[] args ) throws IOException
     {
         BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) );
-        String s = reader.readLine();
+        //String s = reader.readLine();
+        String s = "Мама мыла раму.";
         char[] letters = s.toCharArray();
-        s = "";
 
-        int i = 0;
-        while ( letters[i++] != ' ' && i < letters.length )
+        for ( int i = 0; i < letters.length; i++ )
         {
-            char ch = Character.toUpperCase( letters[i] );
-
+            letters[i] = Character.toUpperCase( letters[i] );
+            while ( ++i < letters.length && letters[i] != ' '  );
         }
+
+        System.out.println(letters);
     }
 }
 
-
-// Альтернативный вариант:
+// Другой вариант:
 //public class Solution
 //{
 //    public static void main( String[] args ) throws IOException
