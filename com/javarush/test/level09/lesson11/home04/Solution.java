@@ -4,34 +4,18 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * User: General
- * Date: 12/21/12
- * Time: 11:59 PM
+ * JavaRush.ru
+ * Level 09, Lesson 11, Home 04
+ * <p/>
+ * Вывести на экран сегодняшнюю дату в виде "DEC 12, 2012". Воспользоваться объектом Date.
+ * <p/>
+ * Date: 15.04.13
+ * @author Sergey Kandalintsev
  */
 public class Solution
 {
     public static void main( String[] args )
     {
-        char[] symbol = "Я не хочу изучать Java, я хочу большую зарплату".toCharArray();
-
-        for ( int i = 0; i < 40; i++ )
-        {
-            System.out.println( String.copyValueOf( symbol, i, symbol.length - i) );
-        }
+        //Напишите тут ваш код
     }
 }
-// Другой вариант:
-//
-//public class Solution
-//{
-//    public static void main( String[] args )
-//    {
-//        String s = "Я не хочу изучать Java, я хочу большую зарплату";
-//
-//        for ( int i = 0; i < 40; i++ )
-//        {
-//            System.out.println( s.substring( i ) );
-//        }
-//
-//    }
-//}
