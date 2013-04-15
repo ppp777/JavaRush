@@ -1,5 +1,10 @@
 package com.javarush.test.level09.lesson11.home03;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
 /**
  * JavaRush.ru
  * Level 09, Lesson 11, Home 03
@@ -20,6 +25,23 @@ public class Solution
 
     public static void readData()
     {
-        //add your code here
+        BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) );
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
+
+        try
+        {
+            while ( true )
+            {
+                String nextNumber = reader.readLine();
+                numbers.add( Integer.parseInt( nextNumber ) );
+            }
+        }
+        catch ( IOException | NumberFormatException e )
+        {
+            for ( int n : numbers )
+            {
+                System.out.println( n );
+            }
+        }
     }
 }
