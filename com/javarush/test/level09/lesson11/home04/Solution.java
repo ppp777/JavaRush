@@ -10,14 +10,28 @@ import java.util.Date;
  */
 public class Solution
 {
-    public static void main(String[] args)
+    public static void main( String[] args )
     {
-        String s = "Я не хочу изучать Java, я хочу большую зарплату";
+        char[] symbol = "Я не хочу изучать Java, я хочу большую зарплату".toCharArray();
 
-        for (int i = 0; i < 40; i++)
+        for ( int i = 0; i < 40; i++ )
         {
-            System.out.println(s.substring( i ));
+            System.out.println( String.copyValueOf( symbol, i, symbol.length - i) );
         }
-
     }
 }
+// Другой вариант:
+//
+//public class Solution
+//{
+//    public static void main( String[] args )
+//    {
+//        String s = "Я не хочу изучать Java, я хочу большую зарплату";
+//
+//        for ( int i = 0; i < 40; i++ )
+//        {
+//            System.out.println( s.substring( i ) );
+//        }
+//
+//    }
+//}
