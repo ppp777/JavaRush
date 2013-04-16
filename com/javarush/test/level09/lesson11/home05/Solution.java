@@ -24,7 +24,28 @@ public class Solution
     {
         BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) );
         String s = reader.readLine();
+        String vowelStr = "";
+        String consonantStr = "";
+        char[] letters = s.toCharArray();
 
+        for ( int i = 0; i < letters.length; i++ )
+        {
+            if (letters[i] == ' ')
+            {
+                continue;
+            }
+            if ( isVowel( letters[i] ) )
+            {
+                vowelStr += letters[i] + " ";
+            }
+            else
+            {
+                consonantStr += letters[i] + " ";
+            }
+        }
+
+        System.out.println( vowelStr );
+        System.out.println( consonantStr );
         //Написать тут ваш код
     }
 
@@ -34,9 +55,9 @@ public class Solution
     //метод проверяет, гласная ли буква
     public static boolean isVowel( char c )
     {
-        c = Character.toLowerCase( c );  //приводим символ в нижний регистр - от заглавных к строчным буквам
+        c = Character.toLowerCase( c ); //приводим символ в нижний регистр - от заглавных к строчным буквам
 
-        for ( char d : vowels )   //ищем среди массива гласных
+        for ( char d : vowels ) //ищем среди массива гласных
         {
             if ( c == d )
             {
