@@ -17,6 +17,7 @@ public class Solution
     public static void main( String[] args )
     {
         Date today = new Date();
-        System.out.println(today);
+        SimpleDateFormat formatter = new SimpleDateFormat("MMM dd, yyyy");
+        System.out.println(formatter.format( today ).toUpperCase());
     }
 }
