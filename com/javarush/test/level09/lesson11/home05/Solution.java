@@ -44,6 +44,9 @@ public class Solution
             }
         }
 
+        vowelStr = vowelStr.trim();
+        consonantStr = consonantStr.trim();
+
         System.out.println( vowelStr );
         System.out.println( consonantStr );
         //Написать тут ваш код
