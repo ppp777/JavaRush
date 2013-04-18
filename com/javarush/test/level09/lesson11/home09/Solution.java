@@ -6,51 +6,67 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * User: General
- * Date: 12/21/12
- * Time: 11:59 PM
+ * JavaRush.ru
+ * Level 09, Lesson 11, Home 09
+ * <p/>
+ * Создать класс кот - Cat, с полем "имя" (String). Создать словарь Map(<String, Cat>) и добавить туда 10 котов в
+ * виде "Имя"-"Кот". Получить из Map множество (Set) всех имен и вывести его на экран.
+ * <p/>
+ * Date: 19.04.13
+ * @author Sergey Kandalintsev
  */
-//public class Solution
-//{
-//    public static void main(String[] args)
-//    {
-//        Map<String, Cat> map = createMap();
-//        Set<Cat> set = convertMapToSet(map);
-//        printCatSet(set);
-//    }
-//
-//    public static Map<String, Cat> createMap()
-//    {
-//        //Напишите тут ваш код
-//    }
-//
-//    public static Set<Cat> convertMapToSet(Map<String, Cat> map)
-//    {
-//        //Напишите тут ваш код
-//    }
-//
-//    public static void printCatSet(Set<Cat> set)
-//    {
-//        for (Cat cat:set)
-//        {
-//            System.out.println(cat);
-//        }
-//    }
-//
-//    public static class Cat
-//    {
-//        private String name;
-//
-//        public Cat(String name)
-//        {
-//            this.name = name;
-//        }
-//
-//        public String toString()
-//        {
-//            return "Cat "+this.name;
-//        }
-//    }
-//
-//
-//}
+public class Solution
+{
+    public static void main( String[] args )
+    {
+        Map<String, Cat> map = createMap();
+        Set<Cat> set = convertMapToSet( map );
+        printCatSet( set );
+    }
+
+    public static Map<String, Cat> createMap()
+    {
+        Map<String, Cat> map = new HashMap<String, Cat>();
+        map.put( "Murka", new Cat( "Murka" ) );
+        map.put( "Murzik", new Cat( "Murzik" ) );
+        map.put( "Vas'ka", new Cat( "Vas'ka" ) );
+        map.put( "Pushok", new Cat( "Pushok" ) );
+        map.put( "Bobik", new Cat( "Bobik" ) );
+        map.put( "Zhuchka", new Cat( "Zhuchka" ) );
+        map.put( "Koteg", new Cat( "Koteg" ) );
+        map.put( "Dymka", new Cat( "Dymka" ) );
+
+        return map;
+    }
+
+    public static Set<Cat> convertMapToSet( Map<String, Cat> map )
+    {
+        Set<Cat> set = new HashSet<Cat>();
+
+        set.addAll( map.values() );
+        return set;
+    }
+
+    public static void printCatSet( Set<Cat> set )
+    {
+        for ( Cat cat : set )
+        {
+            System.out.println( cat );
+        }
+    }
+
+    public static class Cat
+    {
+        private String name;
+
+        public Cat( String name )
+        {
+            this.name = name;
+        }
+
+        public String toString()
+        {
+            return "Cat " + this.name;
+        }
+    }
+}
