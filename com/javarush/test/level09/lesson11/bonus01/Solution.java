@@ -5,34 +5,38 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * User: General
- * Date: 12/21/12
- * Time: 11:59 PM
+ * JavaRush.ru
+ * Level 09, Lesson 11, Bonus 01
+ * <p/>
+ * Программа вводит два имени файла. И копирует первый файл на место заданное вторым именем. <b/>
+ * <p/>
+ * Date: 19.04.13
+ * @author Sergey Kandalintsev
  */
 public class Solution
 {
-    public static void main(String[] args) throws IOException
+    public static void main( String[] args ) throws IOException
     {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) );
 
         String sourceFileName = reader.readLine();
         String destinationFileName = reader.readLine();
 
-        java.io.FileInputStream fileInputStream = new java.io.FileOutputStream(destinationFileName);
-        java.io.FileInputStream fileOutputStream = new java.io.FileOutputStream(destinationFileName);
+        java.io.FileInputStream fileInputStream = new java.io.FileInputStream( sourceFileName );
+        java.io.FileOutputStream fileOutputStream = new java.io.FileOutputStream( destinationFileName );
 
         int count = 0;
-        while (fileInputStream.available()>0);
+
+        while ( fileInputStream.available() > 0 )
         {
             int data = fileInputStream.read();
-            fileOutputStream.write(data);
+            fileOutputStream.write( data );
             count++;
         }
 
-        System.out.println("Скопировано байт "+count);
+        System.out.println( "Скопировано байт " + count );
 
         fileInputStream.close();
         fileOutputStream.close();
     }
-
 }
