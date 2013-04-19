@@ -5,30 +5,41 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 /**
- * User: General
- * Date: 12/21/12
- * Time: 11:59 PM
+ * JavaRush.ru
+ * Level 10, Lesson 11, Home 05
+ * <p/>
+ * Ввести с клавиатуры 10 строчек и подсчитать в них количество различных букв (для 33 букв алфавита). Вывести
+ * результат на экран. <b/>
+ * Пример вывода: <b/>
+ * a 5 <b/>
+ * б 8 <b/>
+ * в 3 <b/>
+ * ... <b/>
+ * я 9
+ * <p/>
+ * Date: 19.04.13
+ * @author Sergey Kandalintsev
  */
 public class Solution
 {
-    public static void main(String[] args)  throws Exception
+    public static void main( String[] args ) throws Exception
     {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) );
 
         //алфавит
         ArrayList<Character> alphabet = new ArrayList<Character>();
-        for(int i=0;i<32;i++)
+        for ( int i = 0; i < 32; i++ )
         {
-            alphabet.add( (char) ('а'+i));
+            alphabet.add( ( char ) ( 'а' + i ) );
         }
-        alphabet.add(6,'ё');
+        alphabet.add( 6, 'ё' );
 
         //ввод строк
         ArrayList<String> list = new ArrayList<String>();
-        for(int i=0;i<10;i++)
+        for ( int i = 0; i < 10; i++ )
         {
             String s = reader.readLine();
-            list.add( s.toLowerCase());
+            list.add( s.toLowerCase() );
         }
 
 
