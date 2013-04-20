@@ -25,6 +25,7 @@ public class Solution
     public static void main( String[] args ) throws Exception
     {
         BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) );
+        int[] charCount = new int[33];
 
         //алфавит
         ArrayList<Character> alphabet = new ArrayList<Character>();
@@ -42,8 +43,19 @@ public class Solution
             list.add( s.toLowerCase() );
         }
 
-
-        //Напишите тут ваш код
+        //подсчет букв
+        for ( int i = 0; i < list.size(); i++ )
+        {
+            char[] nextString = list.get( i ).toCharArray();
+            for ( int j = 0; j < nextString.length; j++ )
+            {
+                int index = alphabet.indexOf( nextString[j] );
+                charCount[index]++;
+            }
+        }
+        for ( int i = 0; i < charCount.length; i++ )
+        {
+            System.out.println( alphabet.get( i ) + " " + charCount[i] );
+        }
     }
-
 }
