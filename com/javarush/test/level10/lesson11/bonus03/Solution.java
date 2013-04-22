@@ -4,9 +4,13 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /**
- * User: General
- * Date: 12/21/12
- * Time: 11:59 PM
+ * JavaRush.ru
+ * Level 10, Lesson 11, Bonus 03
+ * <p/>
+ * Ввести с клавиатуры 30 чисел. Вывести 10-е и 11-е минимальные числа.
+ * <p/>
+ * Date: 22.04.13
+ * @author Sergey Kandalintsev
  */
 public class Solution
 {
