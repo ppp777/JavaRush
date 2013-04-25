@@ -2,7 +2,7 @@ package com.javarush.test.level11.lesson11.home07;
 
 /**
  * JavaRush.ru
- * Level 11, Lesson 11, Home 06
+ * Level 11, Lesson 11, Home 07
  * <p/>
  * Расставь правильно "цепочку наследования" в классах: Pet, Cow, Dog, Pig, Animal.
  * <p/>
