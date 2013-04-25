@@ -17,7 +17,6 @@ public class Solution
 
     public class House
     {
-
     }
 
     public class Cat
