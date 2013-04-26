@@ -2,7 +2,7 @@ package com.javarush.test.level12.lesson04.task02;
 
 /**
  * JavaRush.ru
- * Level 12, Lesson 04, Task 01
+ * Level 12, Lesson 04, Task 02
  * <p/>
  * Написать два метода: print(int) и print(Integer). Написать такой код в методе main, чтобы вызвались они оба.
  * Date: 26.04.13
