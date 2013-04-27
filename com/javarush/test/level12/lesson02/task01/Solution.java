@@ -31,7 +31,7 @@ public class Solution
         @Override
         public String getName()
         {
-            return "Я не корова, Я – кит.";
+            return "Я не корова, Я – кит";
         }
     }
 }
