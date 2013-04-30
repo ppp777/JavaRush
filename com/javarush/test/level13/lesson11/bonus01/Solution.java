@@ -47,6 +47,7 @@ public class Solution
             }
         }
 
+        reader.close();
         sort( numbers );
 
         for ( int x : numbers )
