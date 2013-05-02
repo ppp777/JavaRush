@@ -80,14 +80,6 @@ public class Solution
 
     private static boolean isValidKey( String key )
     {
-        switch ( key )
-        {
-            case "soapOpera":
-            case "cartoon":
-            case "triller":
-                return true;
-            default:
-                return false;
-        }
+        return "soapOpera".equals( key ) || "cartoon".equals( key ) || "triller".equals( key );
     }
 }
