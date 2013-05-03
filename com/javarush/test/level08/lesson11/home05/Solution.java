@@ -23,39 +23,30 @@ public class Solution
     public static void main( String[] args ) throws IOException
     {
         BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) );
-        //String s = reader.readLine();
-        String s = "Мама мыла раму.";
+        String s = reader.readLine();
+        //String s = "Мама мыла раму.";
+        String result = "";
         char[] letters = s.toCharArray();
 
         for ( int i = 0; i < letters.length; i++ )
         {
-            letters[i] = Character.toUpperCase( letters[i] );
-            while ( ++i < letters.length && letters[i] != ' '  );
+            if ( !Character.isAlphabetic( letters[i] ) )
+            {
+                result += letters[i];
+                continue;
+            }
+            result += Character.toUpperCase( letters[i++] );
+            while ( i < letters.length && Character.isAlphabetic( letters[i] ) )
+            {
+                result += letters[i++];
+            }
+
+            if ( i < letters.length )
+            {
+                result += letters[i];
+            }
         }
 
-        System.out.println(letters);
+        System.out.println( result );
     }
 }
-
-// Другой вариант:
-//public class Solution
-//{
-//    public static void main( String[] args ) throws IOException
-//    {
-//        BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) );
-//        String s = reader.readLine();
-//        String[] splittedWords = s.split( "\\s+" ); // '\s+' - regex for all whitespaces
-//
-//        s = "";
-//        if ( splittedWords[0].length() > 0 )
-//        {
-//            for ( String word : splittedWords )
-//            {
-//                s += word.substring( 0, 1 ).toUpperCase() + word.substring( 1 ) + " ";
-//            }
-//        }
-//
-//        s = s.trim();
-//        System.out.println( s );
-//    }
-//}
