@@ -17,12 +17,12 @@ public class Solution
 {
     public static void main( String[] args ) throws Exception
     {
-        BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
+        BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) );
         int sum = 0;
 
         while ( true )
         {
-            int nextNumber = Integer.parseInt( br.readLine() );
+            int nextNumber = Integer.parseInt( reader.readLine() );
             sum += nextNumber;
             if ( nextNumber == -1 )
             {
