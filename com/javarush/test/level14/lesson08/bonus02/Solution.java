@@ -76,4 +76,18 @@ public class Solution
 
         return greatestCommonDivisor( ( n - m ) >> 1, m );
     }
+
+// Итеративный вариант:
+//    private static int greatestCommonDivisor( int m, int n )
+//    {
+//        while ( m != 0 && n != 0 )
+//        {
+//            if (m > n)
+//                m %= n;
+//            else
+//                n %= m;
+//        }
+//
+//        return m + n;
+//    }
 }
