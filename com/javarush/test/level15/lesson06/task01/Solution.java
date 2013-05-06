@@ -2,10 +2,6 @@ package com.javarush.test.level15.lesson06.task01;
 
 import java.io.Serializable;
 
-/* Максимально простой код
-Упрости код - убери все наследования классов, которые и так будут добавлены автоматически при компиляции
-PS: Взаимосвязь между объектами me и zapp - Has-a (использует): http://ru.wikipedia.org/wiki/Has-a
- */
 /**
  * JavaRush.ru
  * Level 15, Lesson 06, Task 01
