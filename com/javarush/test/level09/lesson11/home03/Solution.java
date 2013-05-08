@@ -32,8 +32,8 @@ public class Solution
         {
             while ( true )
             {
-                String nextNumber = reader.readLine();
-                numbers.add( Integer.parseInt( nextNumber ) );
+                int nextNumber = Integer.parseInt( reader.readLine() );
+                numbers.add( nextNumber );
             }
         }
         catch ( IOException | NumberFormatException e )
