@@ -7,7 +7,7 @@ package com.javarush.test.level16.lesson03.task01;
  * Создать public static class TestThread - нить с помощью интерфейса Runnable. TestThread должен выводить в консоль
  * "My first thread".
  * <p/>
- * Date: 04.05.13
+ * Date: 09.05.13
  * @author Sergey Kandalintsev
  */
 public class Solution
