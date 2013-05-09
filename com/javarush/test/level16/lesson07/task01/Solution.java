@@ -1,9 +1,6 @@
 package com.javarush.test.level16.lesson07.task01;
 
 /**
-
- */
-/**
  * JavaRush.ru
  * Level 16, Lesson 07, Task 01
  * <p/>
