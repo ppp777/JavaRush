@@ -2,7 +2,7 @@ package com.javarush.test.level16.lesson05.task04;
 
 /**
  * JavaRush.ru
- * Level 16, Lesson 05, Task 03
+ * Level 16, Lesson 05, Task 04
  * <p/>
  * Справедливость.
  * 1. Разберитесь, что делает программа.
