@@ -35,7 +35,6 @@ public class Solution
     {
         BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) );
 
-        //map of pairs (city --> family)
         Map<String, String> addresses = new HashMap<String, String>();
         while ( true )
         {
@@ -55,7 +54,7 @@ public class Solution
 }
 
 // Исходный текст программы:
-//public class Solution
+//public class test.Solution
 //{
 //    public static void main( String[] args ) throws IOException
 //    {
