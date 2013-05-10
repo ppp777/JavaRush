@@ -35,7 +35,7 @@ public class Solution
 }
 
 //Исходный вариант:
-//public class Solution
+//public class test.Solution
 //{
 //    public int A = 5;
 //    public int B = 5;
@@ -44,13 +44,13 @@ public class Solution
 //
 //    public static void main( String[] args )
 //    {
-//        Solution solution = new Solution();
+//        test.Solution solution = new test.Solution();
 //        solution.A = 5;
 //        solution.B = 5 * B;
 //        solution.C = 5 * C * D;
-//        Solution.D = 5 * D * C;
+//        test.Solution.D = 5 * D * C;
 //
-//        Solution.D = 5;
+//        test.Solution.D = 5;
 //    }
 //
 //    public int getA()
