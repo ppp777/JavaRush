@@ -18,7 +18,9 @@ public class Solution
     public static void main( String[] args )
     {
         NameOfDefferentThreads tt = new NameOfDefferentThreads();
+
         tt.start();
+
         for ( int i = 0; i < count; i++ )
         {
             tt.printMsg();
@@ -27,6 +29,7 @@ public class Solution
 
     public static class NameOfDefferentThreads extends Thread
     {
+        @Override
         public void run()
         {
             for ( int i = 0; i < count; i++ )
