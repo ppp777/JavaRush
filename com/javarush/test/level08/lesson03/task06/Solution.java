@@ -5,19 +5,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- *
  *JavaRush.ru
  *Level 08, Lesson 03, task 06
- *
  *
  *  Есть коллекция HashMap<Object, Object>, туда занесли 10 различных пар объектов.  Вывести содержимое коллекции
  *  на экран. Пример вывода (тут показана только одна строка):
  *  Sim – 5
  *
- *
  * Date: 06.02.13
  * @author Sergey Kandalintsev
- *
  */
 public class Solution
 {
