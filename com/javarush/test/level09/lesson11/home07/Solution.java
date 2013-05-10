@@ -40,10 +40,10 @@ public class Solution
 //
 //    public void main( String[] args )
 //    {
-//        Solution room = new Solution();
+//        test.Solution room = new test.Solution();
 //        room.A = 5;
 //
-//        Solution.D = 5;
+//        test.Solution.D = 5;
 //    }
 //
 //    public int getA()
