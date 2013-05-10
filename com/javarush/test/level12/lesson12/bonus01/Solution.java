@@ -41,7 +41,6 @@ public class Solution
     {
         public abstract void swim();
     }
-
 }
 
 
