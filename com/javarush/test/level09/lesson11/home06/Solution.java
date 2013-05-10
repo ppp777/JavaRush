@@ -22,7 +22,11 @@ public class Solution
 
     public static void main( String[] args )
     {
-        // Напишите тут ваш код
+        System.out.println( hood );
+        System.out.println( grandmother );
+        System.out.println( patty );
+        System.out.println( woodman );
+        System.out.println( wolf );
     }
 
     //красная шапочка
