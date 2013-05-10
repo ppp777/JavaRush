@@ -5,17 +5,13 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
- *
  *JavaRush.ru
  *Level 08, Lesson 03, task 04
  *
- *
  *  Есть коллекция HashMap<String, String>, туда занесли 10 различных строк. Вывести на экран список ключей.
- *
  *
  * Date: 05.02.13
  * @author Sergey Kandalintsev
- *
  */
 public class Solution
 {
