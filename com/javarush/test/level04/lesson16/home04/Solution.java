@@ -6,9 +6,9 @@ import java.text.SimpleDateFormat;
 import java.util.GregorianCalendar;
 
 /**
- *JavaRush.ru
- *Level 04, Lesson 16, Home 04
- *
+ * JavaRush.ru
+ * Level 04, Lesson 16, Home 04
+ * <p/>
  * Ввести с клавиатуры строку name. Ввести с клавиатуры дату рождения (три числа) y, m, d.
  * Вывести на экран текст:
  * "Меня зовут name
@@ -16,21 +16,22 @@ import java.util.GregorianCalendar;
  * Пример:
  * Меня зовут Вася
  * Я родился 15.2.1988
- *
+ * <p/>
  * Date: 22.01.13
  * @author Sergey Kandalintsev
  */
-
 public class Solution
 {
-    public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    public static void main( String[] args ) throws Exception
+    {
+        BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
         String name = br.readLine();
-        int year = Integer.parseInt(br.readLine());
-        int month = Integer.parseInt(br.readLine());
-        int day = Integer.parseInt(br.readLine());
-        System.out.println("Меня зовут " + name);
-        System.out.println("Я родился " + day + "." + month + "." + year);
+        int year = Integer.parseInt( br.readLine() );
+        int month = Integer.parseInt( br.readLine() );
+        int day = Integer.parseInt( br.readLine() );
+
+        System.out.println( "Меня зовут " + name );
+        System.out.println( "Я родился " + day + "." + month + "." + year );
     }
 }
 
