@@ -30,6 +30,7 @@ public class Solution
     {
         public static boolean isCansel = false;
 
+        @Override
         public void run()
         {
             while ( !isCansel )
