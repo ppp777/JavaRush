@@ -13,7 +13,7 @@ package com.javarush.test.level15.lesson12.home06;
  * static void printAllFields; <b/>
  * 0; <b/>
  * null; <b/>
- * Solution constructor; <b/>
+ * test.Solution constructor; <b/>
  * static void printAllFields; <b/>
  * 6; <b/>
  * First name.
@@ -44,7 +44,7 @@ public class Solution
 
     public Solution()
     {
-        System.out.println( "Solution constructor" );
+        System.out.println( "test.Solution constructor" );
         printAllFields( this );
     }
 
