@@ -40,7 +40,7 @@ public class Solution
 }
 
 // Исходный вариант:
-//public class Solution
+//public class test.Solution
 //{
 //
 //    public static void main( String[] args ) throws Exception
