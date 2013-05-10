@@ -13,7 +13,7 @@ package com.javarush.test.level15.lesson12.home06;
  * static void printAllFields; <b/>
  * 0; <b/>
  * null; <b/>
- * test.Solution constructor; <b/>
+ * Solution constructor; <b/>
  * static void printAllFields; <b/>
  * 6; <b/>
  * First name.
