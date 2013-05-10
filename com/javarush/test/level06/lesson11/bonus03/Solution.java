@@ -1,39 +1,36 @@
-/**
- *
- *JavaRush.ru
- *Level 06, Lesson 11, bonus 03
- *
- * Задача: Программа вводит с клавиатуры 5 чисел и выводит их в возрастающем порядке.
- *
- * Date: 27.01.13
- * @author Sergey Kandalintsev
- *
- */
-
 package com.javarush.test.level06.lesson11.bonus03;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+/**
+ * JavaRush.ru
+ * Level 06, Lesson 11, bonus 03
+ * <p/>
+ * Задача: Программа вводит с клавиатуры 5 чисел и выводит их в возрастающем порядке.
+ * <p/>
+ * Date: 27.01.13
+ * @author Sergey Kandalintsev
+ */
 public class Solution
 {
-    public static void main(String[] args) throws Exception
+    public static void main( String[] args ) throws Exception
     {
         final int N = 5;
         int[] numbers = new int[N];
-        BufferedReader reader  = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) );
 
-        for (int i = 0; i < numbers.length; i++)
+        for ( int i = 0; i < numbers.length; i++ )
         {
-            numbers [i] = Integer.parseInt(reader.readLine());
+            numbers[i] = Integer.parseInt( reader.readLine() );
         }
 
-        Arrays.sort(numbers);
+        Arrays.sort( numbers );
 
-        for (int i: numbers)
+        for ( int i : numbers )
         {
-            System.out.println(i);
+            System.out.println( i );
         }
     }
 }
@@ -43,7 +40,7 @@ public class Solution
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Solution
+public class test.Solution
 {
     public static void main(String[] args) throws Exception
     {
