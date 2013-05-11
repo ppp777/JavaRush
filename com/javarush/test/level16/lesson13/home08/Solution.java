@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * JavaRush.ru
- * Level 16, Lesson 13, Home 07
+ * Level 16, Lesson 13, Home 08
  * <p/>
  * Кто первый встал - того и тапки.
  * 1. Разберись, что делает программа:
