@@ -16,10 +16,12 @@ import java.io.InputStreamReader;
  */
 public class Solution
 {
+    public static final int NUMBERS_QTY = 20;   // Кол-во вводимых чмсел
+
     public static void main( String[] args ) throws Exception
     {
         BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
-        int[] numbers = new int[20];
+        int[] numbers = new int[NUMBERS_QTY];
 
         numbers[0] = Integer.parseInt( br.readLine() );
         int maxNumber = numbers[0];
