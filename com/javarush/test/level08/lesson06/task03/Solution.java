@@ -42,7 +42,7 @@ public class Solution
     {
         for ( int i = 0; i < 10000; i++ )
         {
-            list.add( 0, new Object() );
+            list.add( i, new Object() );
         }
     }
 }
