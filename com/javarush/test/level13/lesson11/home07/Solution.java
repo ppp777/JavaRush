@@ -15,7 +15,7 @@ public class Solution
 {
     public static void main( String[] args ) throws Exception
     {
-        SimpleObject<String> stringObject = new StringObject<Object>();
+        SimpleObject<String> stringObject = new StringObject<String>();
     }
 
     interface SimpleObject<T>
