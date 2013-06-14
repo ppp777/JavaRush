@@ -25,10 +25,9 @@ public class Solution
 
     public static void readData()
     {
-        BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) );
         ArrayList<Integer> numbers = new ArrayList<Integer>();
 
-        try
+        try ( BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) ) )
         {
             while ( true )
             {
