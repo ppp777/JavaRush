@@ -7,12 +7,12 @@ import java.util.List;
  * JavaRush.ru
  * Level 14, Lesson 08, Home 07
  * <p/>
- * Клининговый центр <b/>
- * 1. Реализовать метод cleanAllApartaments. Для каждого объекта из apartaments: <b/>
+ * Клининговый центр <br>
+ * 1. Реализовать метод cleanAllApartaments. Для каждого объекта из apartaments: <br/>
  * 2. для однокомнатных квартир (Apt1Room) вызвать метод clean1Room, т.е. если объект типа Apt1Room, то вызвать у
- * него метод clean1Romm. <b/>
+ * него метод clean1Romm. <br/>
  * 3. для двухкомнатных квартир (Apt2Room) вызвать метод clean2Rooms, т.е. если объект типа Apt2Room, то вызвать у
- * него метод clean2Rooms. <b/>
+ * него метод clean2Rooms. <br>
  * 4. для трехкомнатных квартир (Apt3Room) вызвать метод clean3Rooms, т.е. если объект типа Apt3Room, то вызвать у
  * него метод clean3Rooms.
  * <p/>
