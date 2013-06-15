@@ -33,7 +33,7 @@ public class Solution
         }
     }
 
-    public static String factorial( int n )
+    public static String factorial( int n ) throws IllegalArgumentException
     {
         if ( n > 150 )
         {
