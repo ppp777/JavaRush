@@ -6,8 +6,9 @@ import java.io.InputStreamReader;
 /**
  * JavaRush.ru
  * Level 04, Lesson 06, Task 01
+ * <br>
  * Ввести с клавиатуры два числа, и вывести на экран минимальное из них.
- * <p/>
+ * <br>
  * Date: 20.01.13
  * @author Sergey Kandalintsev
  */
@@ -22,7 +23,7 @@ public class Solution
         System.out.println( min( firstNumber, secondNumber ) );
     }
 
-    public static int min( int a, int b )
+    private static int min( int a, int b )
     {
         return a < b ? a : b;
     }
