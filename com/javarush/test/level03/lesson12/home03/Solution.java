@@ -6,11 +6,11 @@ import java.io.InputStreamReader;
 /**
  * JavaRush.ru
  * Level 03, Lesson 12, Home 02
- * <p/>
+ * <br>
  * Ввести с клавиатуры число n. Вывести на экран надпись "Я буду зарабатывать $n в час".
  * Пример:
  * "Я буду зарабатывать $50 в час"
- * <p/>
+ * <br>
  * Date: 09.05.13
  * @author Sergey Kandalintsev
  */
