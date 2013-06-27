@@ -6,8 +6,9 @@ import java.io.InputStreamReader;
 /**
  * JavaRush.ru
  * Level 04, Lesson 06, Task 03
+ * <br>
  * Ввести с клавиатуры три числа, и вывести их в порядке убывания.
- * <p/>
+ * <br>
  * Date: 20.01.13
  * @author Sergey Kandalintsev
  */
@@ -48,6 +49,6 @@ public class Solution
             b = tmp;
         }
 
-        System.out.println( "" + a + " " + b + " " + c );
+        System.out.println( a + " " + b + " " + c );
     }
 }
