@@ -21,11 +21,15 @@ public class Solution
         int thirdNumber = Integer.parseInt( reader.readLine() );
         int fourthNumber = Integer.parseInt( reader.readLine() );
 
-        System.out.println( max( max( firstNumber, secondNumber ),
-                                 max( thirdNumber, fourthNumber ) ) );
+        System.out.println( max( firstNumber, secondNumber, thirdNumber, fourthNumber ) );
     }
 
-    public static int max( int a, int b )
+    private static int max( int a, int b, int c, int d )
+    {
+        return max( max( a, b ), max( c, d ) );
+    }
+
+    private static int max( int a, int b )
     {
         return a > b ? a : b;
     }
