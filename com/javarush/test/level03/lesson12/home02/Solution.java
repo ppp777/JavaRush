@@ -3,9 +3,9 @@ package com.javarush.test.level03.lesson12.home02;
 /**
  * JavaRush.ru
  * Level 03, Lesson 12, Home 02
- * <p/>
+ * <br>
  * Вывести на экран десять раз надпись "Я не хочу изучать Java, я хочу большую зарплату".
- * <p/>
+ * <br>
  * Date: 09.05.13
  * @author Sergey Kandalintsev
  */
