@@ -6,10 +6,10 @@ import java.io.InputStreamReader;
 /**
  * JavaRush.ru
  * Level 04, Lesson 06, Task 04
- * <p/>
+ * <br>
  * Ввести с клавиатуры два имени, и если имена одинаковые вывести сообщение «Имена идентичны». Если их длины равны –
  * вывести сообщение – «Длины имён равны»
- * <p/>
+ * <br>
  * Date: 20.01.13
  * @author Sergey Kandalintsev
  */
