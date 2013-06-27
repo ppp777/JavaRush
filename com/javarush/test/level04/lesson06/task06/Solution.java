@@ -6,9 +6,9 @@ import java.io.InputStreamReader;
 /**
  * JavaRush.ru
  * Level 04, Lesson 06, Task 06
- * <p/>
+ * <br>
  * Ввести с клавиатуры имя и возраст. Если возраст больше 20 вывести надпись «И 18-ти достаточно»
- * <p/>
+ * <br>
  * Date: 20.01.13
  * @author Sergey Kandalintsev
  */
