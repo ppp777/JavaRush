@@ -21,6 +21,7 @@ public class Solution
     {
         Map<String, Cat> map = createMap();
         Set<Cat> set = convertMapToSet( map );
+
         printCatSet( set );
     }
 
@@ -35,16 +36,15 @@ public class Solution
         map.put( "Zhuchka", new Cat( "Zhuchka" ) );
         map.put( "Koteg", new Cat( "Koteg" ) );
         map.put( "Dymka", new Cat( "Dymka" ) );
+        map.put( "Tom", new Cat( "Tom" ) );
+        map.put( "Begemot", new Cat( "Begemot" ) );
 
         return map;
     }
 
     public static Set<Cat> convertMapToSet( Map<String, Cat> map )
     {
-        Set<Cat> set = new HashSet<Cat>();
-
-        set.addAll( map.values() );
-        return set;
+        return new HashSet<Cat>( map.values() );
     }
 
     public static void printCatSet( Set<Cat> set )
