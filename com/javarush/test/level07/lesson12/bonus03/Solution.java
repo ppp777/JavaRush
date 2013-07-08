@@ -6,40 +6,39 @@ import java.util.Arrays;
 import java.util.Collections;
 
 /**
- *
- *JavaRush.ru
- *Level 07, Lesson 12, home02
- *
- *
+ * JavaRush.ru
+ * Level 07, Lesson 12, home02
+ * <p/>
+ * <p/>
  * Программа вводит с клавиатуры 20 чисел и выводит их в убывающем порядке.
- *
- *
+ * <p/>
+ * <p/>
  * Date: 02.02.13
  * @author Sergey Kandalintsev
- *
  */
 
 public class Solution
 {
-    public static void main(String[] args) throws Exception
+    public static void main( String[] args ) throws Exception
     {
-        BufferedReader reader = new BufferedReader( new InputStreamReader(System.in) );
+        BufferedReader reader = new BufferedReader( new InputStreamReader( System.in ) );
         Integer[] array = new Integer[20];
-        for (int i = 0; i < 20; i++)
+
+        for ( int i = 0; i < 20; i++ )
         {
             array[i] = Integer.parseInt( reader.readLine() );
         }
 
-        sort(array);
+        sort( array );
 
-        for (int x : array)
+        for ( int x : array )
         {
-            System.out.println(x);
+            System.out.println( x );
         }
     }
 
-    public static void sort(Integer... array)
+    public static void sort( Integer... array )
     {
-        Arrays.sort(array, Collections.reverseOrder());
+        Arrays.sort( array, Collections.reverseOrder() );
     }
 }
