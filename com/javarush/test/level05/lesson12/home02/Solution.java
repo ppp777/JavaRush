@@ -1,8 +1,8 @@
 package com.javarush.test.level05.lesson12.home02;
 
 /**
- *JavaRush.ru
- *Level 05, Lesson 12, home 02
+ * JavaRush.ru
+ * Level 05, Lesson 12, home 02
  * <p/>
  * Создай классы Man и Woman. У классов должны быть поля name(String), age(int), address(String). Создай по
  * два объекта каждого класса, со всеми данными. Объекты выведи на экран. Используй конструкторы.
