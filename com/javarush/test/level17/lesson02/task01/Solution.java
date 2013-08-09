@@ -23,7 +23,6 @@ public class Solution
 {
     public static void main( String[] args )
     {
-
     }
 
     public static class Note
@@ -46,6 +45,19 @@ public class Solution
             else if ( !note.startsWith( threadName ) )
             {
                 System.out.println( "Нить [" + threadName + "] удалила чужую заметку [" + note + "]" );
+            }
+        }
+    }
+
+    public static class NoteThread extends Thread
+    {
+        @Override
+        public void run()
+        {
+            for ( int i = 0; i < 1000; i++ )
+            {
+                Note.addNote( getName() + "-Note" + i );
+                Note.removeNote( getName() );
             }
         }
     }
