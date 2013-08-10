@@ -7,13 +7,13 @@ import java.util.List;
  * JavaRush.ru
  * Level 17, Lesson 02, Task 01
  * <p/>
- * Заметки
- * 1. Класс Note будет использоваться нитями.
+ * Заметки<br/>
+ * 1. Класс Note будет использоваться нитями.<br/>
  * 2. Создай public static нить NoteThread, которая в методе run 1000 раз (index = 0-999) сделает следующие
- * действия:
+ * действия:<br/>
  * 2.1. используя метод addNote добавит заметку с именем [getName() + "-Note" + index], например, при index=4
- * "Thread-0-Note4"
- * 2.2. используя метод removeNote удалит заметку
+ * "Thread-0-Note4"<br/>
+ * 2.2. используя метод removeNote удалит заметку<br/>
  * 2.3. в качестве первого параметра в removeNote передай имя нити - метод getName()
  * <p/>
  * Date: 09.08.13
@@ -43,6 +43,7 @@ public class Solution
         public static void removeNote( String threadName )
         {
             String note = notes.remove( 0 );
+
             if ( note == null )
             {
                 System.out.println( "Другая нить удалила нашу заметку" );
