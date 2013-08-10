@@ -23,6 +23,11 @@ public class Solution
 {
     public static void main( String[] args )
     {
+        NoteThread nt1 = new NoteThread();
+        NoteThread nt2 = new NoteThread();
+
+        nt1.start();
+        nt2.start();
     }
 
     public static class Note
